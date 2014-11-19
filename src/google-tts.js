@@ -272,6 +272,12 @@
      * Get name of this player.
      */
     self.toString = function() { throw new Error('Not yet implemented'); };
+    
+        /**
+     * setVolume
+     */
+    var audioVolumeNum = 1;
+    self.seAudioVolume = function(volume) { audioVolumeNum = volume; };
   };
 
 
@@ -340,6 +346,7 @@
         audio.addEventListener('ended', function() {
           cb();
         });
+        audio.volume = self.volume;
         audio.play();
       } catch (e) {
         return cb(e);
