@@ -276,7 +276,7 @@
         /**
      * setVolume
      */
-    var audioVolumeNum = 1;
+    var audioVolumeNum = 0.1;
     self.setAudioVolume = function(volume) { audioVolumeNum = volume; };
     self.getAudioVolume = function() { return  audioVolumeNum;};
   };
