@@ -348,6 +348,7 @@
           cb();
         });
         audio.volume = self.getAudioVolume();
+        console.log(self.getAudioVolume());
         audio.play();
       } catch (e) {
         return cb(e);
