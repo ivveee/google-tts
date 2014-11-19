@@ -346,7 +346,7 @@
         audio.addEventListener('ended', function() {
           cb();
         });
-        audio.volume = self.volume;
+        audio.volume = self.audioVolumeNum;
         audio.play();
       } catch (e) {
         return cb(e);
