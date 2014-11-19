@@ -347,8 +347,8 @@
         audio.addEventListener('ended', function() {
           cb();
         });
-        audio.volume = self.getAudioVolume();
-        console.log(self.getAudioVolume());
+        audio.volume = 1;
+        //console.log(self.getAudioVolume());
         audio.play();
       } catch (e) {
         return cb(e);
